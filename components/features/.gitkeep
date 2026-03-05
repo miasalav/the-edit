@@ -1,0 +1,11 @@
+# /components/features/
+
+Domain-aware, composed components live here.
+Built in Phase 2.
+
+Files to create:
+- ProductCard.tsx
+- ProductGrid.tsx
+- AffiliateButton.tsx
+- CategoryNav.tsx
+- GuideCard.tsx

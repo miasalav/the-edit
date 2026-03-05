@@ -1,0 +1,58 @@
+/* ============================================================
+   The Edit — Global Styles
+   Tailwind base, components, utilities + CSS custom properties.
+   No component-specific styles here — use Tailwind classes.
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Smooth scrolling site-wide */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Typography defaults */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+  }
+
+  /* Focus ring — accessible and on-brand */
+  :focus-visible {
+    @apply outline-none ring-2 ring-terracotta ring-offset-2;
+  }
+}
+
+@layer components {
+  /* Reusable max-width container */
+  .container-site {
+    @apply max-w-site mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  /* Portable text (Sanity rich text) styles */
+  .prose-the-edit {
+    @apply text-ink leading-relaxed;
+  }
+
+  .prose-the-edit h2 {
+    @apply font-serif text-2xl font-bold mt-8 mb-3;
+  }
+
+  .prose-the-edit h3 {
+    @apply font-serif text-xl font-semibold mt-6 mb-2;
+  }
+
+  .prose-the-edit p {
+    @apply mb-4;
+  }
+
+  .prose-the-edit a {
+    @apply text-terracotta underline underline-offset-2 hover:opacity-80;
+  }
+
+  .prose-the-edit strong {
+    @apply font-semibold;
+  }
+}

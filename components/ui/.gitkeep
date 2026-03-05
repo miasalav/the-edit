@@ -1,0 +1,9 @@
+# /components/ui/
+
+Atomic, stateless UI components live here.
+Built in Phase 2.
+
+Files to create:
+- Button.tsx
+- Badge.tsx
+- Rating.tsx

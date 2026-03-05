@@ -1,0 +1,20 @@
+# /app/(site)/
+
+All public-facing routes live here.
+The (site) route group adds a shared layout (nav + footer)
+without affecting the URL structure.
+
+Built in Phase 2:
+- layout.tsx        → shared nav + footer
+- page.tsx          → homepage (/)
+- [category]/
+    page.tsx        → /kitchen, /bedroom, etc.
+- products/
+    [slug]/
+      page.tsx      → /products/[slug]
+- guides/
+    page.tsx        → /guides
+    [slug]/
+      page.tsx      → /guides/[slug]
+- loading.tsx       → skeleton loader (Phase 4)
+- error.tsx         → error boundary (Phase 4)

@@ -9,8 +9,6 @@ export const siteSettingsSchema = defineType({
   name: 'siteSettings',
   title: 'Site Settings',
   type: 'document',
-  // Prevent editors from creating or deleting this singleton
-  __experimental_actions: ['update', 'publish'],
   fields: [
     defineField({
       name: 'heroImage',
